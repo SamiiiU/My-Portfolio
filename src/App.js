@@ -10,7 +10,7 @@ import Projects from './components/Projects';
 function App() {
   return (
     <div className='relative bg-[rgb(0,0,19)] flex justify-center items-center flex-col overflow-hidden'>
-      <div className='w-full md:px-16 px-8 max-w-7xl h-[100%]'>
+      <div className='w-full md:px-16 px-8 max-w-7xl h-[100%] font-josefin'>
         
         <Home />
         <About />

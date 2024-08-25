@@ -35,7 +35,7 @@ const About = () => {
 
         <div className='flex flex-col justify-center gap-y-16 md:w-1/2'>
             <div className='flex justify-end w-full text-pink-500 text-[4em]'><FaUser  /></div>
-            <h1 className='text-sm text-justify md:text-sm text-teal-50 opacity-80'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quam optio error fugit cupiditate, labore recusandae facere aperiam eligendi accusantium iste sunt excepturi aut neque itaque possimus corrupti quis. Et.
+            <h1 className=' text-justify text-xl text-teal-50 opacity-80'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quam optio error fugit cupiditate, labore recusandae facere aperiam eligendi accusantium iste sunt excepturi aut neque itaque possimus corrupti quis. Et.
             Maiores accusantium natus, qui tempore nemo quis beatae, facilis dignissimos eum voluptatem amet unde ab accusamus eaque iure magnam quae nostrum doloribus. Autem reprehenderit tempore expedita, corporis enim iste beatae.
             Dolorum voluptas, reiciendis blanditiis consequuntur optio temporibus ad ab minima ipsa porro tempore quis dolorem, doloribus odio aut et? Consequuntur unde impedit nulla? Iure reprehenderit deleniti quod tempore aliquid placeat!
             Rerum libero inventore optio ex minus voluptate sed aliquam delectus quos, dolorem modi impedit repudiandae quasi pariatur amet id porro autem? Sapiente nihil laborum a, assumenda modi illo repudiandae nesciunt.</h1>

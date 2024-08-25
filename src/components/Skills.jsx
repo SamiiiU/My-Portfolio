@@ -16,12 +16,12 @@ const Skills = () => {
         ><HiOutlineArrowLongRight /></div>
       </div>
 
-         <div className='grid items-center justify-start w-full grid-cols-1 md:-mt-8 gap-x-16 gap-y-8 md:grid-cols-2'>
+         <div className='grid items-center justify-start w-full  grid-cols-1 md:-mt-8 gap-x-16 gap-y-8 md:grid-cols-2'>
         
             {Skill && Skill.map((item , idx) => (
-                <div key={idx} className='flex items-center justify-center gap-8 md:justify-start'>
-                    <h1 className='xl:text-4xl lg:text-2xl text-lg font-bold w-[20%] text-teal-50'>{item.Name}</h1>
-                    <div className='flex items-center justify-center gap-4'>
+                <div key={idx} className='flex items-center justify-center gap-8 md:justify-start '>
+                    <h1 className='xl:text-4xl w-28 sm:text-2xl text-xl font-bold  text-teal-50'>{item.Name}</h1>
+                    <div className=' flex items-center justify-center gap-4'>
                     {bar && bar.map((idxs) =>(
                     <span key={idxs} className={`xl:w-4 xl:h-4 w-3 h-3  ${idxs < item.Progress ? 'bg-pink-500' : 'bg-pink-700/50'}  rounded-full`}></span>
                     ))}

@@ -16,10 +16,10 @@ const Home = () => {
        <span className=' absolute -right-20 top-72 blur-3xl p-[100px] bg-gradient-to-l w-[30%] from-pink-300 to-transparent rounded-full ' />
   
      {/* Main content*/}       
-     <div className='flex flex-col items-center justify-center w-full pt-32 overflow-hidden gap-x-8 gap-y-16 md:items-start md:flex-row'>
+     <div className='flex  flex-col items-center justify-center w-full pt-32 overflow-hidden gap-x-8 gap-y-16 md:items-start md:flex-row'>
         <div className='text-white md:w-[50%]  h-full flex flex-col justify-center md:items-start items-center gap-8'>
             <div className="text-xl tracking-wide uppercase sm:text-2xl">Designer And Developer</div>
-            <h1 className='font-bold text-[4em]  sm:text-[6em] leading-snug font-josefin'>Sami Ullah</h1>
+            <h1 className='font-bold text-[4em]  sm:text-[6em] leading-snug '>Sami Ullah</h1>
             
             <div className='px-4 text-xl text-center md:border-l-4 md:text-2xl border-teal-50'>I am Reactjs Developer  and a designer , i work remotely from Pakistan</div>
         </div>
