@@ -7,7 +7,7 @@ const Skills = () => {
        
 
   return (
-    <section  className='relative flex flex-col items-center w-full mt-40 gap-y-8'>
+    <section  className='relative flex flex-col items-center w-full mt-40 gap-y-8' id='skills'>
       <div className='flex items-center justify-between w-full gap-16 p-0 '>
         <h1 className=" md:text-[5em] text-[4em] lg:text-[6em] font-josefin font-bold text-teal-50 leading-none">My Skills</h1>
         

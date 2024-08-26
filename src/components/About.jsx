@@ -1,13 +1,12 @@
 import React from 'react'
 import Aboutpic from '../Images/Aboutme.jpg'
 import { FaUser } from "react-icons/fa";
-import { bar } from '../Data/Skillsbar';
 
 const About = () => {
 
 
   return (
-    <section className='relative w-full my-20' id="About">
+    <section className='relative w-full my-20 ' id="about">
         <span className='-rotate-45 opacity-30 absolute right-20 top-40 blur-[100px] w-[30%] h-[30%] p-[200px] bg-gradient-to-tr bg-gradient-to-bl from-blue-700 to-transparent rounded-full ' />
 
         <span className=' opacity-30 absolute -right-20 bottom-0 blur-[40px] w-[50%] h-[40%] bg-gradient-to-tr bg-gradient-to-bl from-pink-500 to-transparent rounded-full ' />
@@ -19,7 +18,7 @@ const About = () => {
 
         <div className='flex flex-col w-full h-full gap-y-8 md:flex-row '>
         <div className='flex flex-col items-center gap-y-8 md:justify-center md:items-start md:w-1/2'>
-        <h1 className='md:absolute md:top-[10%] left-[40%] sm:text-[5em] text-[4em] lg:text-[6em] font-josefin font-bold text-teal-50 leading-none'> About Me</h1>
+        <h1 className='md:absolute top-0 left-[30%] sm:text-[5em] text-[4em] lg:text-[6em] font-josefin font-bold text-teal-50 leading-none'> About Me</h1>
 
         <div className="xl:w-[28em] xl:h-[28em] sm:w-[22em] sm:h-[22em] w-[16em] h-[16em] rounded-full bg-gradient-to-br from-pink-500 via-blue-400 to-transparent "
         

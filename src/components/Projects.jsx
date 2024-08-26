@@ -6,7 +6,7 @@ const Projects = () => {
 
   console.log(projects);
   return (
-    <section  className='relative flex flex-col items-center w-full mt-40 py-9 gap-y-8'>
+    <section  className='relative flex flex-col items-center w-full mt-40 py-9 gap-y-8' id='projects'>
 
     <span className='z-0 opacity-30 absolute -right-20 bottom-0 blur-[40px] w-[50%] h-[40%] bg-gradient-to-tr bg-gradient-to-bl from-pink-500 to-transparent rounded-full ' />
 

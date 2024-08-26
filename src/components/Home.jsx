@@ -1,19 +1,20 @@
 import React from 'react'
-import Nav from './Nav'
 import { Spotlight } from './UI/Spotlight'
+import Nav from './Nav'
 const Home = () => {
   return (
    
      
     
-    <div className='flex flex-col items-center justify-center h-screen'>
+    <section className='flex flex-col items-center justify-center h-screen' id='Home'>
+      
          <Spotlight className="h-screen -top-10 left-20 md:left-32 md:-top-20" fill="white"/>
         
-     <span className=' absolute -right-20 top-40 blur-3xl w-[60%] p-[200px] bg-gradient-to-l from-pink-500 to-[rgba(255,3,179,0.1)] rounded-full ' />
+     <span className=' absolute -right-20 z-0 top-40 blur-3xl w-[60%] p-[200px] bg-gradient-to-l from-pink-500 to-[rgba(255,3,179,0.1)] rounded-full pointer-events-none' />
 
-       <span className=' absolute -right-20 -top-40 blur-3xl p-[200px] bg-gradient-to-b bg-gradient-to-l w-[60%] from-blue-700 to-transparent rounded-full ' />
+       <span className=' absolute z-0 -right-20 -top-40 blur-3xl p-[200px] bg-gradient-to-b bg-gradient-to-l w-[60%] from-blue-700 to-transparent rounded-full pointer-events-none' />
    
-       <span className=' absolute -right-20 top-72 blur-3xl p-[100px] bg-gradient-to-l w-[30%] from-pink-300 to-transparent rounded-full ' />
+       <span className=' z-0 absolute -right-20 top-72 blur-3xl p-[100px] bg-gradient-to-l w-[30%] from-pink-300 to-transparent rounded-full pointer-events-none' />
   
      {/* Main content*/}       
      <div className='flex  flex-col items-center justify-center w-full pt-32 overflow-hidden gap-x-8 gap-y-16 md:items-start md:flex-row'>
@@ -38,7 +39,7 @@ const Home = () => {
         
         
      </div>
-    </div>
+    </section>
 
   )
 }
