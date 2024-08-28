@@ -1,4 +1,4 @@
-"use client";
+
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "../../utils/Utils";
@@ -32,7 +32,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx > 4 ? 'text-purple-500' : 'text-white' } opacity-0 `}
+              className={`${idx > 1 ? 'text-purple-500' : 'text-white' } opacity-0 `}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

@@ -18,7 +18,9 @@ module.exports = {
       },
        animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
-        shimmer: "shimmer 2s linear infinite"
+        shimmer: "shimmer 2s linear infinite",
+        spin : "rotate 2s linear infinite "
+        
       },
       backgroundImage: {
         
@@ -43,6 +45,10 @@ module.exports = {
             opacity: 1,
             transform: "translate(-50%,-40%) scale(1)",
           },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
     },

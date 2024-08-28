@@ -6,31 +6,55 @@ export const Skill = [
     {
         id:1,
         Name : "Html",
-        Progress : 7 ,
+        Progress : 9 ,
 
     },
     {
         id:2,
         Name : "Css",
-        Progress : 3 ,
+        Progress : 7 ,
         
     },
     {
         id:3,
         Name : "Js",
-        Progress : 7 ,
+        Progress : 8 ,
         
     },
     {
         id:4,
         Name : "React",
-        Progress : 7 ,
+        Progress : 8 ,
         
     },
     {
         id:5,
         Name : "C++",
+        Progress : 6 ,
+        
+    },
+    {
+        id:6,
+        Name : "Java",
+        Progress : 4 ,
+        
+    },
+    {
+        id:7,
+        Name : "Illustration",
+        Progress : 9 ,
+        
+    },
+    {
+        id:8,
+        Name : "Animation",
         Progress : 8 ,
+        
+    },
+    {
+        id:9,
+        Name : "UI/UX",
+        Progress : 7 ,
         
     }
 ]
