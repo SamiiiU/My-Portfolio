@@ -23,7 +23,7 @@ const Projects = () => {
   return (
 
 
-    <section  className='relative flex flex-col items-center w-full px-8 mt-40 py-9 gap-y-8 text-teal-50' id='projects'>
+    <section  className='relative flex flex-col items-center w-full px-8 mt-10 py-9 gap-y-8 text-teal-50' id='projects'>
 
     <span data-aos="fade-left"  className=' absolute -right-20 z-0 top-40 blur-3xl w-[20em] h-[20em] bg-gradient-to-l from-[#d017b8]/20 to-[rgba(255,3,179,0.1)] rounded-full pointer-events-none' />
 
@@ -36,7 +36,7 @@ const Projects = () => {
       {/**Main content */}
 
       {/* header and logo start */}
-      <div className='z-10 flex items-center justify-between w-full p-0'>
+      <div className='z-10 flex items-center justify-between w-full py-8'>
         <h1 className=" md:text-[5em] text-[3em] lg:text-[6em] font-josefin font-bold text-teal-50 leading-none"  data-aos="fade-right">My Projects</h1>
         
         <div className='lg:text-[20em] md:text-[15em] sm:text-[10em] text-[7em] text-[#d017b8] rotate-[90deg]'

@@ -33,7 +33,7 @@ const Contact = () => {
 
   }
   return (
-    <section className='flex flex-col items-center w-full mt-40 sm:relative text-teal-50 gap-y-8' id='contact'>
+    <section className='flex flex-col items-center w-full mt-10 sm:relative text-teal-50 gap-y-8' id='contact'>
        
 
          <span className='z-50 opacity-30 absolute -right-20 bottom-0 blur-[40px] w-[40%] h-[40%] bg-gradient-to-tr bg-gradient-to-bl from-pink-500/50 to-transparent rounded-full pointer-events-none' />
@@ -54,19 +54,19 @@ const Contact = () => {
           </div>
           {/* Designe element end */}
 
-          <div className='z-10 w-full md:px-28 sm:px-12 px-4 py-12 bg-[rgb(0,0,19)] md:max-w-[70%]'>
+          <div data-aos="fade-up" className='z-10 w-full md:px-28 sm:px-12 px-4 py-12 bg-[rgb(0,0,19)] md:max-w-[70%]'>
 
             
 
-            <p data-aos="fade-right" className='mt-12 ml-6 text-lg'> Full name</p>
+            <p  className='mt-12 ml-6 text-lg'> Full name</p>
 
-            <input data-aos="fade-right" type='text ' placeholder='Enter Your full name.... ' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={name} onChange={(e) => setName(e.value)}/>
+            <input  type='text ' placeholder='Enter Your full name.... ' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={name} onChange={(e) => setName(e.value)}/>
 
-            <p data-aos="fade-right" className='mt-12 ml-6 text-lg'> Email</p>
-            <input data-aos="fade-right" type='text ' placeholder='Enter Your email.... ' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={gmail} onChange={(e) => setGmail(e.value)}/>
+            <p  className='mt-12 ml-6 text-lg'> Email</p>
+            <input  type='text ' placeholder='Enter Your email.... ' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={gmail} onChange={(e) => setGmail(e.value)}/>
 
-            <p data-aos="fade-right" className='mt-12 ml-6 text-lg'> Massage</p>
-            <textarea data-aos="fade-right" placeholder='Enter Your full name.... ' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={Massage} onChange={(e) => setMassage(e.value)}/>
+            <p  className='mt-12 ml-6 text-lg'> Massage</p>
+            <textarea placeholder='Enter Your full name.... ' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={Massage} onChange={(e) => setMassage(e.value)}/>
 
             <h1  className={`text-center ${sent ? 'visible' : 'hidden'} mt-4  text-xl`}>{result}</h1>
             

@@ -7,11 +7,11 @@ const Skills = () => {
        
 
   useEffect(() => {
-    initAOS( 200 , 100 , 1000);
+    initAOS( 200 , 0 , 1000);
   }, []); 
 
   return (
-    <section  className='relative flex flex-col items-center w-full px-8 mt-40 gap-y-8' id='skills'>
+    <section  className='relative flex flex-col items-center w-full px-8 mt-10 gap-y-8' id='skills'>
 
 
     <span data-aos="fade-left"  className=' absolute -right-20 z-0 top-40 blur-3xl w-[40%] h-[40%] bg-gradient-to-l from-[#d017b8]/20 to-[rgba(255,3,179,0.1)] rounded-full pointer-events-none' />

@@ -68,12 +68,12 @@ const Nav = () => {
 
   return (
     <>
-    <div className=' text-teal-50 fixed z-50 left-[50%] translate-x-[-50%]   top-4 w-[80%]'>
+    <div className=' text-teal-50 fixed z-50 left-[50%] translate-x-[-50%]  top-4 w-[80%]'>
        
         <div className='relative overflow-hidden bg-[rgb(0,0,19)] rounded-full md:text-lg justify-between items-center flex md:visible invisible font-bold px-8 shadow-sm shadow-[#d017b8]  ' 
         >
           <div 
-                className='absolute z-50 w-[18%] h-full -bottom-[70%] bg-[#d017b8] rounded-full blur-md ' 
+                className='absolute z-50 w-[18%] h-full -bottom-[70%] bg-[#d017b8]/40 rounded-full blur-md ' 
                 style={{ left: `${toleft}%` , transition : '0.5s'}} 
               />
           
@@ -93,13 +93,17 @@ const Nav = () => {
 
     <div className={` text-teal-50 backdrop-blur-sm z-40   w-full h-screen flex justify-center items-center flex-col gap-8 text-3xl fixed top-0 ${open ? 'left-0' : 'left-[100%]'} bg-[rgb(0,0,19)]/40 `} style={{transition : '0.5s'}}>
 
-    <div className='absolute z-50  py-4 text-4xl left-[10%] top-5 font-bold rotate-180' onClick={handleClose}> <RiMenuFoldFill/></div>
+    <div className='absolute z-50 text-4xl font-bold rotate-180 left-4 top-8 ' onClick={handleClose}> <RiMenuFoldFill/></div>
+
+    <div className='flex flex-col items-center justify-center w-full gap-8'>
 
     <a href='#Home' ><h1 >Home</h1> </a>
     <a href='#about '  ><h1 >About</h1></a>
     <a href='#skills' ><h1 >Skills</h1></a>
     <a href='#projects' ><h1 >Projects</h1></a>
     <a href='#contact'  ><h1 >Contacts</h1></a>
+
+    </div>
 
     </div>
 
