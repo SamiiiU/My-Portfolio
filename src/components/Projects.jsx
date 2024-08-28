@@ -36,12 +36,12 @@ const Projects = () => {
       {/**Main content */}
 
       {/* header and logo start */}
-      <div className='z-10 flex items-center justify-between w-full py-8'>
-        <h1 className=" md:text-[5em] text-[3em] lg:text-[6em] font-josefin font-bold text-teal-50 leading-none"  data-aos="fade-right">My Projects</h1>
+      <div data-aos="fade-right" className='z-10 flex items-center justify-between w-full py-8'>
+        <h1 className=" md:text-[5em] text-[3em] lg:text-[6em] font-josefin font-bold text-teal-50 leading-none"  >My Projects</h1>
         
-        <div className='lg:text-[20em] md:text-[15em] sm:text-[10em] text-[7em] text-[#d017b8] rotate-[90deg]'
+        <div className='lg:text-[20em] md:text-[15em] sm:text-[10em] text-[7em] text-[#d017b8]'
         
-        data-aos="fade-right"><HiOutlineArrowLongRight /></div>
+        ><HiOutlineArrowLongRight /></div>
       </div>
 
       {/* heder and logo end  */}

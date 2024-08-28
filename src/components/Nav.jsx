@@ -30,7 +30,6 @@ const Nav = () => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
 
-      console.log(" yelo" ,sectionHeight , sectionTop)
 
       if (window.scrollY >= sectionTop - sectionHeight / 3) {
         currentSection = section.getAttribute('id');
