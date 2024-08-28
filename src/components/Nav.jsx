@@ -1,34 +1,111 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
+import { RiMenuFoldFill } from "react-icons/ri";
 
 const Nav = () => {
   
   const [toleft , setToleft] = useState(0);
+  const [open , setOpen] = useState(false);
+
+  const handleOpen = () => {
+      setOpen(true)
+  }
+
+  const handleClose = () =>{
+    setOpen(false);
+  }
 
   const handleLeft = (value) =>{
       setToleft(value)
   }
 
+
+
+
+  const handleScroll = () => {
+    const sections = document.querySelectorAll('section');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      console.log(" yelo" ,sectionHeight , sectionTop)
+
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    switch (currentSection) {
+      case 'Home':
+        setToleft(0);
+        break;
+      case 'about':
+        setToleft(20);
+        break;
+      case 'skills':
+        setToleft(40);
+        break;
+      case 'projects':
+        setToleft(60);
+        break;
+      case 'contact':
+        setToleft(80);
+        break;
+      default:
+        break;
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='text-teal-50  fixed z-40 left-[50%] translate-x-[-50%]   top-4 w-[80%]'>
+    <>
+    <div className='text-teal-50 fixed z-40 left-[50%] translate-x-[-50%]   top-4 w-[80%]'>
        
-        <div className='relative overflow-hidden bg-[rgb(0,0,19)]  rounded-full md:text-lg  justify-between  items-center full hidden sm:flex font-bold px-8  shadow-sm shadow-pink-500  ' 
+        <div className='relative overflow-hidden bg-[rgb(0,0,19)]  rounded-full md:text-lg  justify-between  items-center full hidden md:flex font-bold px-8  shadow-sm shadow-pink-500  ' 
         >
-          
-        <a href='#Home' className='relative h-full px-8 py-4' onClick={() => handleLeft(0)}><h1 >Home</h1> 
-        <div 
-                className='absolute z-50 w-full h-full bg-pink-500 rounded-full blur-md ' 
-                style={{ left: `${toleft}%` }} 
+          <div 
+                className='absolute z-50 w-[18%] h-full -bottom-[70%] bg-pink-500 rounded-full blur-md ' 
+                style={{ left: `${toleft}%` , transition : '0.5s'}} 
               />
+          
+        <a href='#Home' className='h-full px-8 py-4' onClick={() => handleLeft(0)}><h1 >Home</h1> 
+
         </a>
-        <a href='#about ' className='h-full px-8 py-4' onClick={() => handleLeft(200)}><h1 >About</h1></a>
-        <a href='#skills'className='h-full px-8 py-4'><h1 >Skills</h1></a>
-        <a href='#projects'className='h-full px-8 py-4 '><h1 >Projects</h1></a>
-        <a href='#contact' className='h-full px-8 py-4 '><h1 >Contacts</h1></a>
+        <a href='#about ' className='h-full px-8 py-4' onClick={() => handleLeft(20)}><h1 >About</h1></a>
+        <a href='#skills'className='h-full px-8 py-4' onClick={() => handleLeft(40)}><h1 >Skills</h1></a>
+        <a href='#projects'className='h-full px-8 py-4 ' onClick={() => handleLeft(60)}><h1 >Projects</h1></a>
+        <a href='#contact' className='h-full px-8 py-4 ' onClick={() => handleLeft(80)}><h1 >Contacts</h1></a>
 
         
         </div>
-        <div className='absolute flex items-center justify-end w-full p-4 sm:hidden '> Hellow</div>
+
+        <div className='absolute z-50 flex items-center justify-end w-full py-4 text-4xl md:hidden' onClick={handleOpen}> <RiMenuFoldFill/></div>
+
+        
     </div>
+
+    <div className={` text-teal-50 backdrop-blur-sm z-40   w-full h-screen flex justify-center items-center flex-col gap-8 text-[4em] fixed top-0 ${open ? 'left-0' : 'left-[100%]'} bg-[rgb(0,0,19)]/40 `} style={{transition : '0.5s'}}>
+
+    <div className='absolute z-50  py-4 text-4xl left-[85%] top-5 font-bold rotate-180' onClick={handleClose}> <RiMenuFoldFill/></div>
+
+    <a href='#Home' ><h1 >Home</h1> </a>
+    <a href='#about '  ><h1 >About</h1></a>
+    <a href='#skills' ><h1 >Skills</h1></a>
+    <a href='#projects' ><h1 >Projects</h1></a>
+    <a href='#contact'  ><h1 >Contacts</h1></a>
+
+    </div>
+
+    </>
   )
 }
 
