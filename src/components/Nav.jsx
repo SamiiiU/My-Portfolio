@@ -92,7 +92,7 @@ const Nav = () => {
 
     <div className={` text-teal-50 backdrop-blur-sm z-40   w-full h-screen flex justify-center items-center flex-col gap-8 text-3xl fixed top-0 ${open ? 'left-0' : 'left-[100%]'} bg-[rgb(0,0,19)]/40 `} style={{transition : '0.5s'}}>
 
-    <div className='absolute z-50 text-4xl font-bold rotate-180 left-4 top-8 ' onClick={handleClose}> <RiMenuFoldFill/></div>
+    <div className='absolute z-50 text-4xl font-bold rotate-180 left-6 top-8 ' onClick={handleClose}> <RiMenuFoldFill/></div>
 
     <div className='flex flex-col items-center justify-center w-full gap-8'>
 

@@ -1,7 +1,8 @@
 import Github from '../Images/githubfinder.png'
 import Expense from '../Images/Expense.png'
 import Dotes from  '../Videos/Dotes.mp4'
-import Stitches from '../Videos/Stitch.mp4'
+import Stitches from '../Images/Stitch.png'
+import ToDo from '../Videos/Todo.mp4'
 
 
 import img1 from "../Images/Designing/1.gif"
@@ -39,11 +40,21 @@ export const projectsweb = [
     },
     {
         id : 4 ,
-        title : "Ecommerce Landing ",
-        description : "designed manager for daily notes",
-        pic : Stitches,
+        title : "To Do App",
+        description : "Draggable and Rearrangable to do app",
+        pic : ToDo,
+        link : 'https://to-do-list-swart-pi.vercel.app/'
        
-    }
+    },
+    {
+        id : 5 ,
+        title : "Stitch Sphere",
+        description : "Responsive ecommerce Landing page",
+        pic : Stitches,
+        link : 'https://stitch-sphere.vercel.app/'
+       
+    },
+    
 ]
 
 
