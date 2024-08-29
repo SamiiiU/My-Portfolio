@@ -17,13 +17,14 @@ const Contact = () => {
     if (name !== "" && gmail !== "" && message !== "") {
       const templateParams = {
         name: name,
+        to_name : "Sami" ,
         gmail: gmail,
         message: message,
       };
 
       emailjs.send(
         'service_9wdv78p',
-        'template_u9sw1f4', 
+        'template_l5vzds7', 
         templateParams,
         'KMjSwQzTT4RVy5UWU' 
       )
@@ -40,6 +41,7 @@ const Contact = () => {
       setGmail("");
       setMessage("");
       setSend(true);
+      
     } else {
       setResult("Please fill all input fields");
       setSend(true);
@@ -57,7 +59,7 @@ const Contact = () => {
           <input type='text' placeholder='Enter Your full name....' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={name} onChange={(e) => setName(e.target.value)} />
 
           <p className='mt-12 ml-6 text-lg'> Email</p>
-          <input type='text' placeholder='Enter Your email....' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={gmail} onChange={(e) => setGmail(e.target.value)} />
+          <input type='email' placeholder='Enter Your email....' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={gmail} onChange={(e) => setGmail(e.target.value)} />
 
           <p className='mt-12 ml-6 text-lg'> Message</p>
           <textarea placeholder='Enter Your message....' className='w-full p-4 border-none outline-none bg-pink-900/20 rounded-3xl text-teal-50' value={message} onChange={(e) => setMessage(e.target.value)} />

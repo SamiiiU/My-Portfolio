@@ -2,15 +2,25 @@ import React, { useEffect, useState }  from 'react'
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { projectsweb , projectsDesigning} from '../Data/Projects.js'
 import { initAOS } from '../Animation/AosAnimation';
+import Loading from './Loading.jsx';
 
 const Projects = () => {
+
 
   useEffect(() => {
     initAOS( 200 , 100 , 1000);
   }, []); 
 
+  
 
+  const [loading , setLoading] = useState(true)
   const [showtype , setShowtype] = useState("Dev");
+
+  useEffect(() => {
+    projectsDesigning ? setLoading(false) : setLoading(true)
+    console.log("loading is now : " , loading)
+
+  } , [showtype])
 
   const handleshowtype = () => {
 
@@ -18,12 +28,15 @@ const Projects = () => {
   }
 
 
+ 
+
+
 
 
   return (
 
 
-    <section  className='relative flex flex-col items-center w-full px-8 mt-10 py-9 gap-y-8 text-teal-50' id='projects'>
+    <section data-aos="fade-up"  className='relative flex flex-col items-center w-full px-8 mt-10 py-9 gap-y-8 text-teal-50' id='projects'>
 
     <span data-aos="fade-left"  className=' absolute -right-20 z-0 top-40 blur-3xl w-[20em] h-[20em] bg-gradient-to-l from-[#d017b8]/20 to-[rgba(255,3,179,0.1)] rounded-full pointer-events-none' />
 
@@ -57,7 +70,7 @@ const Projects = () => {
 
       {showtype === "Dev" ? (
         <>
-          <div className='z-10 flex flex-col w-full gap-16 sm:gap-y-8'  >
+          <div className='z-40 flex flex-col w-full gap-16 sm:gap-y-8'  >
             {projectsweb && projectsweb.map((item, idx) => (
             <div key={idx} className='flex flex-col items-center justify-start gap-8 py-8 sm:bg-pink-50/0 rounded-3xl bg-[rgb(0,0,19)]10 sm:py-0 sm:border-none border-b-2 border-pink-400 sm:flex-row text-teal-50'>
 
@@ -106,13 +119,21 @@ const Projects = () => {
 
       ) : (
         <>
-        <div className='flex flex-wrap items-center justify-center w-full gap-x-4 gap-y-16'>
-          {projectsDesigning && projectsDesigning.map((item , idx) => (
-              <div key={idx} className={item.className + "relative" } style={{transition : '0.5s'}}>
-                <img src={item.img} style={{transition : '0.5s'}} alt="" className="object-cover hover:scale-[110%] cursor-pointer w-full h-full rounded-lg" />
-                
-              </div>
-          ))}
+        <div className='flex flex-col flex-wrap items-center justify-center w-full 2md:flex-row gap-x-4 gap-y-16'>
+          {!loading ? (
+              <>
+              {projectsDesigning && projectsDesigning.map((item , idx) => (
+                <div key={idx} className={item.className + "relative md:h-[300px]" } style={{transition : '0.5s'}}>
+                  <img src={item.img} style={{transition : '0.5s'}} alt="" className="object-cover hover:scale-[110%] cursor-pointer sm:w-full sm:h-full  rounded-lg"/>
+                      
+                 
+                  
+                </div>
+            ))}
+              </>
+          ) : (
+            <Loading />
+          )}
         </div>
         </>
 

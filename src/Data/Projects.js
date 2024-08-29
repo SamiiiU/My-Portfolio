@@ -52,55 +52,55 @@ export const projectsDesigning = [
         id : 1,
         img : img1,
         title : "",
-        className : " md:w-[38%] w-auto h-[300px] rounded-lg"
+        className : " 2md:w-[38%] w-auto  rounded-lg"
     }, 
     {
         id : 2,
         img : img2,
         title : "",
-        className : " md:w-[60%] w-auto h-[300px] rounded-lg"
+        className : " 2md:w-[60%] w-auto  rounded-lg"
     },
     {
         id : 3,
         img : img3,
         title : "",
-        className : " md:w-[60%] w-auto h-[300px] rounded-lg "
+        className : " 2md:w-[60%] w-auto  rounded-lg "
     },
     {
         id : 4,
         img : img4,
         title : "",
-        className : " md:w-[38%] w-auto h-[300px] rounded-lg"
+        className : " 2md:w-[38%] w-auto  rounded-lg"
     },
     {
         id : 5,
         img : img5,
         title : "",
-        className : "md:w-[38%] w-auto h-[300px]  rounded-lg "
+        className : "2md:w-[38%] w-auto   rounded-lg "
     },
     {
         id : 6,
         img : img6,
         title : "",
-        className : "md:w-[60%] w-auto h-[300px] rounded-lg"
+        className : "2md:w-[60%] w-auto  rounded-lg"
     },
     {
         id : 7,
         img : img7,
         title : "",
-        className : "md:w-[48%] w-auto h-[300px] rounded-lg"
+        className : "2md:w-[48%] w-auto  rounded-lg"
     },
     {
         id : 8,
         img : img8,
         title : "",
-        className : "md:w-[48%] w-auto h-[300px] rounded-lg"
+        className : "2md:w-[48%] w-auto  rounded-lg"
     },
     {
         id : 9,
         img : img9,
         title : "",
-        className : "md:w-[60%] w-auto h-[300px] rounded-lg"
+        className : "2md:w-[60%] w-auto  rounded-lg"
     },
 
 ]
