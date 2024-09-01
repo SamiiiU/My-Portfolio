@@ -1,5 +1,9 @@
 import React , {useEffect} from 'react'
 import { Spotlight } from './UI/Spotlight'
+import { FaDownload } from "react-icons/fa";
+import Resume from '../Other_Aseets/Resume.pdf'
+
+
 
 import { initAOS } from '../Animation/AosAnimation';
 import { TextGenerateEffect } from './UI/TextEffect';
@@ -31,11 +35,23 @@ const Home = () => {
             <div data-aos="fade-right" data-aos-delay= "100" className='px-4 text-xl text-center md:border-l-4 md:text-2xl md:text-left border-teal-50'>I am Reactjs Developer  and a designer , i work remotely from Pakistan</div>
         </div>
         <div className='relative items-center  md:w-[50%]'>
-                
-        <div data-aos="fade-right" className=' relative overflow-hidden animate-spin  xl:w-[28em] xl:h-[28em] sm:w-[22em] sm:h-[22em] w-[16em] h-[16em] bg-pink-300 rounded-full'>
+
+        
+       
+        <div className=' xl:w-[28em]  xl:h-[28em] sm:w-[22em] sm:h-[22em] w-[16em] h-[16em] bg-slate-600 rounded-full'>
+
+        <a href={Resume} download="Sami's Resume " className=''>
+             <div className='absolute  z-40 rounded-full xl:w-[28em] xl:h-[28em] sm:w-[22em] sm:h-[22em] w-[16em] h-[16em]  flex justify-center items-center' ><FaDownload  className='text-[rgb(0,0,19)]/60 sm:text-[7em] text-[5em]'/></div>
+            </a>
+
+        <div data-aos="fade-right" className='z-30 relative overflow-hidden animate-spin  xl:w-[28em] xl:h-[28em] sm:w-[22em] sm:h-[22em] w-[16em] h-[16em] bg-pink-300 rounded-full'>
             <span className='relative block w-full h-full  bg-gradient-to-r from-teal-400 to-transparent blur-xl p-[100px] rounded-full' />
+
+            
+            
             <span className='absolute block w-full h-full  right-5 bg-gradient-to-l from-[#d017b8] to-transparent blur-xl p-[100px] rounded-full' />
 
+        </div>
         </div>
 
 
