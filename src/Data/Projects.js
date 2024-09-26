@@ -2,6 +2,7 @@ import Github from '../Images/githubfinder.png'
 import Expense from '../Images/Expense.png'
 import Dotes from  '../Videos/Dotes.mp4'
 import Stitches from '../Images/Stitch.png'
+import Agency from '../Images/Agency.png'
 import ToDo from '../Videos/Todo.mp4'
 
 
@@ -23,6 +24,9 @@ export const projectsweb = [
         pic : Github,
         link : 'https://github-finder-eta-one.vercel.app/'
     },
+
+    
+
     {
         id : 2 ,
         title : "Dotes Manager",
@@ -46,13 +50,21 @@ export const projectsweb = [
         link : 'https://to-do-list-swart-pi.vercel.app/'
        
     },
+    // {
+    //     id : 5 ,
+    //     title : "Stitch Sphere",
+    //     description : "Responsive ecommerce Landing page",
+    //     pic : Stitches,
+    //     link : 'https://stitch-sphere.vercel.app/'
+       
+    // },
+
     {
         id : 5 ,
-        title : "Stitch Sphere",
-        description : "Responsive ecommerce Landing page",
-        pic : Stitches,
-        link : 'https://stitch-sphere.vercel.app/'
-       
+        title : "Agency Website Clone",
+        description : "Fully cloned a digital agency website ",
+        pic : Agency,
+        link : 'https://logovive.vercel.app/'
     },
     
 ]

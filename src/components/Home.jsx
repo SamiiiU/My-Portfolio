@@ -16,7 +16,7 @@ const Home = () => {
   return (
 
 
-    <section className='flex flex-col items-center justify-center px-8 md:h-screen' id='Home'>
+    <section  className='flex flex-col items-center justify-center px-8 md:h-screen' id='Home'>
       
          <Spotlight className="h-screen -top-10 left-20 md:left-32 md:-top-20" fill="white"/>
         
